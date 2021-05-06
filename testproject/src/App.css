@@ -1,3 +1,13 @@
+button{
+  padding: 1em;
+}
+.Toggler{
+  background-color: #61dafb;
+  }
+.Incrementer{
+  background-color: burlywood;
+}
+
 .invisible{
   visibility: hidden;
 }

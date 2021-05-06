@@ -18,6 +18,7 @@ function App() {
   const counterFunc =()=>{
     setCounter(count + 1);
   }
+  //Hade jag haft fler api-calls att göra så skulle jag nog gjort dem i en egen fil
   const accessEndpoint = async() =>{
     await fetch("http://localhost:9000/basicEndpoint")
       .then(result => result.text())
