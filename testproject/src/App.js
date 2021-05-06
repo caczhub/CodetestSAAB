@@ -6,16 +6,19 @@ import React, {useState} from 'react'; //nödvändig för att kunna uppdatera st
 function App() {
 
   const [toggle, setToggle] = useState(true); //en boolean som blir true eller false
-  const [counter, setCounter] = useState(0); //en number som ökar
+  const [count, setCounter] = useState(0); //en number som ökar
 
   //Funktioner vi slänger ned som props i barnen härifrån för att ge knapparna deras funktion
   const toggleFunc =()=>{
-    setToggle(!toggle)
+    setToggle(!toggle);
+  }
+  const counterFunc =()=>{
+    setCounter(count + 1);
   }
 
   return (
     <div className="App">
-      <Buttons toggle={toggleFunc}/> 
+      <Buttons toggler={toggleFunc} counter={counterFunc}/> 
     </div>
   );
 }

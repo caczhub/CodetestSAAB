@@ -1,3 +1,4 @@
+//jag hade nog egentligen delat upp detta i två olika knappar som jag kunde återanvända bättre, men det behövs inte för detta projekts scope.
 function Buttons(){
 
     return(
