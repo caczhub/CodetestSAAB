@@ -2,6 +2,7 @@
 import './App.css';
 import Buttons from './Buttons.js';
 import React, {useState} from 'react'; //nödvändig för att kunna uppdatera state
+import Display from './Display';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <Buttons toggler={toggleFunc} counter={counterFunc}/> 
+      <Display displayImg={toggle} imgSrc="./logo.svg" number={count}/>
     </div>
   );
 }
