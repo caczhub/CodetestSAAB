@@ -2,11 +2,11 @@ function Buttons(){
 
     return(
         <div className="Buttons">
-        <button className="Toggler">
-        I toggle
+        <button className="Toggler" /*onClick={}*/ >
+            I toggle
         </button>
-        <button className="Incrementer">
-        I increment
+        <button className="Incrementer" /* onClick={}*/ >
+            I increment
         </button>
         </div>
     )
